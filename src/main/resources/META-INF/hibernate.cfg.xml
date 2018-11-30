@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration SYSTEM
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factory>
+    <session-factory name = "hibernate.cfg.xml">
         <property name="hibernate.dialect">
             org.hibernate.dialect.PostgreSQL95Dialect
         </property>
@@ -12,7 +12,7 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:postgresql://127.0.0.1:5432/postgres
+            jdbc:postgresql://192.168.1.102:5432/postgres
         </property>
 
         <property name="hibernate.connection.username">
@@ -23,6 +23,6 @@
             testAppPostgre5q1
         </property>
 
-        <mapping resource="Person.hbm.xml"/>
+        <mapping resource="resources/META-INF/Person.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

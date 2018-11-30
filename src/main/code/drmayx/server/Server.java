@@ -1,6 +1,7 @@
 package code.drmayx.server;
 
 import code.drmayx.controllers.MainController;
+import code.drmayx.dao.PostgresDao;
 import code.drmayx.servlets.DatabaseServlet;
 import code.drmayx.servlets.RootServlet;
 import code.drmayx.servlets.SimpleServlet;
@@ -31,5 +32,7 @@ public class Server {
         server.start();
 
         MainController.Start();
+        PostgresDao.stop();
+        server.stop(0);
     }
 }
