@@ -23,6 +23,6 @@
             testAppPostgre5q1
         </property>
 
-        <mapping resource="resources/META-INF/Person.hbm.xml"/>
+        <mapping resource="resources/META-INF/Address.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

@@ -32,7 +32,7 @@ public class MainController {
     public static void Start(){
         new MainController();
 
-        instance.useHibernate();
+        //instance.useHibernate();
 
         String input = "";
         while(!input.equalsIgnoreCase("exit")){
